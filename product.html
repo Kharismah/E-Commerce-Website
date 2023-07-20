@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>  
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Favicon code-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+    <title>Menu</title>
+</head>
+<body>
+  <div class="d-flex justify-content-center">
+    <img id="logo_img" src="images/logo.jpg" alt="">
+  </div>
+  <nav class="navbar navbar-expand-sm sticky-top">
+      <div class="container text-center">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">FOODBERRY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="place_order.html">PLACE ORDER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+          </ul>
+          <i class="bi bi-cart2 fs-3" data-bs-toggle="offcanvas" data-bs-target="#cart_canvas"></i>
+          <div class="d-flex justify-content-center">
+            <i class="bi bi-telephone-fill py-2"></i><a class="nav-link" href="tel:+233241786372">0241786372</a>          </div>
+        </div>
+      </div>
+      <div>
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+      </div>
+  </nav>
+
+  <section class="products">
+    <div class="container1 py-3">
+      <div class="row py-5">
+        <div class="col-lg-5 m-auto text-center">
+          <h1>CAKES & PASTRIES</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/birthday cake.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Birthday Cake</h6>
+          <h6>GH₵ 300</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addCake()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/cake parfait.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Cake Parfait</h6>
+          <h6>GH₵ 20</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addParfait()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/spring rolls.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Spring Rolls</h6>
+          <h6>GH₵ 20 (10 pieces)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addSpringrolls()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/meatpie.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Meat Pie</h6>
+          <h6>GH₵ 7</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addMeatpie()">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2 py-3">
+      <div class="row py-5">
+        <div class="col-lg-5 m-auto text-center">
+          <h1>DELICIOUS MEALS</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/banku.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Banku with chili pepper and Tilapia</h6>
+          <h6>GH₵ 30</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addBankuchili()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/jollof.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Vegetable Jollof rice with Chicken/Fish</h6>
+          <h6>GH₵ 30</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addJollof()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/fried rice.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Fried rice with Chicken/Fish</h6>
+          <h6>GH₵ 30</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addFriedrice()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/waakye.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Waakye with Chicken/Fish</h6>
+          <h6>GH₵ 30</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addWaakye()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/yam.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Chicken wings with fried yam chips</h6>
+          <h6>GH₵ 30</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addYam()">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container1 py-3">
+      <div class="row py-5">
+        <div class="col-lg-5 m-auto text-center">
+          <h1>JUICE & MORE</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/asana.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Asana</h6>
+          <h6>GH₵ 7 (500ml)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addAsana()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/lamugine.jfif" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Lamugine</h6>
+          <h6>GH₵ 7 (500ml)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addLamugine()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/sobolo.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Sobolo</h6>
+          <h6>GH₵ 7 (500ml)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addLamugine()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/pineapple.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Pineapple Juice</h6>
+          <h6>GH₵ 10 (500ml)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addPineapple()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/watermelon.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Watermelon Juice</h6>
+          <h6>GH₵ 10 (500ml)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addWatermelon()">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="col-lg-3 text-center my-3">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="images/orange.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <h6>Orange Juice</h6>
+          <h6>GH₵ 10 (500ml)</h6>
+          <button type="button" class="btn1" data-bs-trigger="focus" data-bs-delay="200" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Added to Cart" onclick="addOrange()">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2 py-3">
+      <div class="row py-5">
+        <div class="col-lg-5 m-auto text-center">
+          <h1>MAKE A CAKE</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <form id="make_cake" class="form text-start w-75 p-4" action="https://formsubmit.co/f56f1905b6d10c873e76a9b8d191d542" method="POST">
+          <input type="hidden" name="_subject" value="Custom Cake Order!">
+          <input type="text" name="Name" id="" placeholder="Enter Name" class="form-control my-3" required>
+          <input type="tel" name="Phone" id="" placeholder="Enter Phone Number" class="form-control my-3" required>
+          <input type="email" name="Email" id="" placeholder="Enter Email" class="form-control " required>
+          
+          <div class="my-3">
+            <label for="" class="form-label">Flavour</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="Vanilla" id="vanilla">
+              <label for="vanilla" class="form-check-label">Vanilla</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="Red_velvet" id="red_velvet">
+              <label for="red_velvet" class="form-check-label">Red Velvet</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="Chocolate" id="chocolate">
+              <label for="chocolate" class="form-check-label">Chocolate</label>
+            </div>
+          </div>
+
+          <div class="my-4">
+            <label for="" class="form-label">Cake Colour</label>
+            <select name="Cake Colour" id="" class="form-select">
+              <option value="" selected hidden></option>
+              <option value="white">White</option>
+              <option value="pink">Pink</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="violet">Violet</option>
+              <option value="yellow">Yellow</option>
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+            </select>
+          </div>
+
+          <div class="">
+            <label for="">Layers</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="layers" id="layer1" value="Single Layer">
+              <label for="layer1" class="form-check-label">Single Layered</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="layers" id="layer2" value="Double Layer">
+              <label for="layer2" class="form-check-label">Double Layered</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="layers" id="layer3" value="Triple Layer">
+              <label for="layer3" class="form-check-label">Triple Layered</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="layers" id="layer4" value="Four Layered">
+              <label for="layer4" class="form-check-label">Four Layered</label>
+            </div>
+          </div>
+
+          <div class="my-4">
+            <label for="" class="form-label">Comments</label>
+            <textarea name="Comments" id="" class="form-control" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <input id="make_cake_submit" class="p-2" type="submit" value="Get Quote">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <section class="d-flex justify-content-between p-4" style="background-color: #6351ce" >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white me-4"><i class="bi bi-facebook"></i></a>
+        <a href="" class="text-white me-4"><i class="bi bi-twitter"></i></a>
+        <a href="" class="text-white me-4"><i class="bi bi-instagram"></i></a>
+      </div>
+     </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">FOODBERRY</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <p>
+              We offer large scale catering services for schools, corporate 
+            bodies, weddings, baby christenings, funerals, birthdays
+             and more…
+            </p>
+          </div>
+           
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <p><a href="index.html" class="text-white">FOODBERRY</a></p>
+            <p><a href="products.html" class="text-white">MENU</a></p>
+            <p><a href="place_order.html" class="text-white">PLACE ORDER</a></p>
+            <p><a href="about.html" class="text-white">ABOUT US</a></p>
+          </div>
+          <div id="contact" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <p><i class="bi bi-house mr-3"></i> MADINA, ACCRA</p>
+            <a href="mailto:doridori290@gmail.com"><i class="bi bi-envelope mr-3"></i> doridori290@gmail.com</a> <br>
+            <i class="bi bi-telephone mr-3"></i><a href="tel:+23341786372"> 0241786372</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Medee's Cuisine</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+    
+  <!-- Cart -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart_canvas" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Cart</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body border rounded">
+      <p id="cart_display" class="text-start fs-5 lh-lg">
+
+      </p>
+      <form action="place_order.html">
+        <textarea hidden name="" id="cart_elements" cols="30" rows="10" class="px-2"></textarea> <br>
+        <button type="submit" class="btn btn-outline-primary">Place Order</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/products.js"></script>
+</body>
+</html>
